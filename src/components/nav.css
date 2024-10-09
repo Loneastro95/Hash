@@ -1,0 +1,127 @@
+.navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+}
+
+.mainContainer {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensure it covers the whole area */
+    background-attachment: fixed; /* Keeps the background fixed as you scroll */
+    position: relative;
+}
+
+.mainContainer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); 
+    z-index: 1; 
+}
+
+.mainContainer > * {
+    position: relative;
+    z-index: 2;
+}
+
+.nav {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background-color: rgba(226, 226, 226, 0.6); /* Semi-transparent background */
+    /* backdrop-filter: blur(10px); Optional blur effect for modern look */
+}
+
+.navText {
+    color: rgb(136, 135, 135);
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+.nav-link.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0) !important;
+    /* border: 1px solid white; */
+    background-color: transparent;
+    /* border-radius: 10px; */
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+.contentContainer {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    color: white;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+
+.contentText {
+    width: 35%;
+    font-size: 3rem;
+}
+
+.reserveBtn {
+    width: 12rem;
+    min-height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border: 2px solid white;
+    background-color: transparent;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .contentText {
+        width: 80%; 
+        font-size: 2.5rem; 
+        text-align: center;
+    }
+
+    .reserveBtn {
+        width: 10rem; 
+        min-height: 3.5rem;
+    }
+
+    .navText {
+        font-size: 1rem; 
+    }
+
+    .link {
+        text-align: end;
+        padding-right: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .contentText {
+        width: 100%;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .reserveBtn {
+        width: 100%;
+        min-height: 3rem; 
+        font-size: 1rem;
+    }
+
+    .navText {
+        font-size: 1rem; 
+    }
+
+    .link {
+        text-align: end;
+        padding-right: 1rem;
+    }
+}
