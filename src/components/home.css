@@ -1,7 +1,20 @@
 .carousel-container{
     width: 100%;
-    
-
+}
+.carousel-container img{
+    width: 100%;
+    aspect-ratio: 1/.4;
+    filter: brightness(0.5);
+    object-fit: cover;
 }
 
+.carousel-caption{
+    top: 40%;
+}
+
+.carousel-container p{
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+}
   

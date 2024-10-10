@@ -1,5 +1,35 @@
 .aboutContainer{
+    display: flex;
+    gap: 2rem;
     width: 100%;
-    aspect-ratio: 1/.7;
-    background-color: black;
+    justify-content: center;
+    aspect-ratio: 1/.4;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    justify-content: space-between;
+    
+}
+.about-content{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.about-text{
+    text-align: center;
+    color: #7D7D7D;
+}
+
+.contactBtn{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 4rem;
+    margin: 0 auto;
+    border-radius: 1rem;
+    border: none;
+    color: white;
+    font-weight: bold;
+    background-color: #003566;
 }

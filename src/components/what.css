@@ -1,0 +1,24 @@
+.whatContainer{
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    justify-content: center;
+    aspect-ratio: 1/.4;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    justify-content: space-between; 
+}
+
+.what-content{
+    padding-top: 1.25rem;
+}
+
+.what-content h5{
+    font-weight: bold;
+    width: 90%;
+}
+
+.what-text{
+    text-align: start;
+    color: #7D7D7D;
+}
