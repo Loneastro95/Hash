@@ -35,16 +35,20 @@
 }
 
 .navText {
-    color: rgb(136, 135, 135);
+    color: rgb(233, 228, 228);
     font-weight: 400;
     font-size: 1.25rem;
+}
+
+.nav-link:hover{
+    color: #FFD60A;
 }
 .nav-link.active {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rgb(255, 255, 255) !important;
-    /* border: 1px solid white; */
+    color: #FFD60A !important;
+    border-bottom: 2px solid #FFD60A;
     background-color: transparent;
     /* border-radius: 10px; */
     font-weight: bold;

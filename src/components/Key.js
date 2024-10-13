@@ -13,8 +13,8 @@ const Key = () => {
           The key pillars of Tshimologong’s ecosystem in achieving its purpose
           are:
         </h5>
-        <div className="card-container row">
-          <div className="col-sm-3 card-inner">
+        <div className="row card-container">
+          <div className="col-md-4 col-sm-6 card-inner">
             <Card className="card mt-4">
               <Card.Img variant="top" src={keyImg} />
               <Card.Body className="cardBody">
@@ -26,7 +26,7 @@ const Key = () => {
               </Card.Body>
             </Card>
           </div>
-          <div className="col-sm-3 card-inner">
+          <div className="col-md-4 col-sm-6 card-inner">
             <Card className="card mt-4">
               <Card.Img variant="top" src={keyImg} />
               <Card.Body className="cardBody">
@@ -38,7 +38,7 @@ const Key = () => {
               </Card.Body>
             </Card>
           </div>
-          <div className="col-sm-3 card-inner">
+          <div className="col-md-4 col-sm-6 card-inner">
             <Card className="card mt-4">
               <Card.Img variant="top" src={keyImg} />
               <Card.Body className="cardBody">
@@ -51,8 +51,12 @@ const Key = () => {
             </Card>
           </div>
         </div>
-        <h5 className="bottom-text">Our Vision is that Tshimologong will become a catalyst for the development of world leading African digital entrepreneurs.</h5>
-        <h5 className="bottom-text">We cement this vision through our approach to digital innovation.</h5>    
+        <h5 className="bottom-text">
+          Our Vision is that Tshimologong will become a catalyst for the development of world leading African digital entrepreneurs.
+        </h5>
+        <h5 className="bottom-text">
+          We cement this vision through our approach to digital innovation.
+        </h5>
       </Container>
     </div>
   );

@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box; /* Ensures padding and border are included in total width and height */
+  }
+  
+  html,
+  body {
+    margin: 0; /* Remove default margin */
+  }
+  
+  .digital-container {
+    display: flex;
+    align-items: center;
+    height: 80vh;
+    flex-direction: column;
+    padding-top: 5%;
+
+  }
+  
+  .circle-container {
+    position: relative;
+    left: -8%;
+    width: 240px;
+    height: 240px;
+  }
+  
+  .venn-container {
+    position: relative; /* Needed for absolute positioning of the circles */
+    display: flex;
+    align-items: center; /* Center align items vertically */
+  }
+  
+  .label-left {
+    position: absolute;
+    left: -170px; /* Position to the left of the circle */
+    top: 50%;
+    transform: translateY(-50%); /* Center vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 280px;
+    
+  }
+  
+  .label-right {
+    position: absolute;
+    left: 400px; /* Position to the right of the circle */
+    top: 50%;
+    transform: translateY(-50%); /* Center vertically */
+    display: flex;
+   
+    align-items: center;
+    padding-top: 280px;
+    width: 100%;
+    
+  }
+  
+  .label-bottom {
+    position: absolute;
+    left: 60%;
+    top: 400px; /* Position below the last circle */
+    transform: translateX(-50%); /* Center horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130%;
+    padding-left: 50px;
+  }
+
+  ul{
+    list-style-type: none;
+  }
+  
+  .venn {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    pointer-events: none;
+    position: absolute;
+    background-color: #003566;
+    mix-blend-mode: multiply;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .digital-icon{
+    color: white;
+    font-size: 3rem;
+    z-index: 2;
+  }
+
+  .digital-text{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .hard{
+    margin-left: 3rem;
+  }
+  
+  /* Positioning the outer circles */
+  #outer1 {
+    left: 0px;
+    top: 0px;
+  }
+  
+  #outer2 {
+    left: 150px;
+    top: 0px;
+  }
+  
+  #outer3 {
+    left: 70px;
+    top: 130px;
+  }
+  
+  .outer {
+    background-color: #003566; 
+    pointer-events: auto;
+    z-index: 1;
+  }
+  
+  .outer:hover {
+    background-color: #000b29; 
+  }
+  
+  .digital-header {
+    text-align: center; 
+    margin-bottom: 20px;
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #7D7D7D;
+  }
+  
+  .digital-items{
+    font-size: 1.112rem;
+    font-weight: bold;
+    color: #7D7D7D;
+  }
+  
+
+@media (max-width: 768px) {
+    .venn {
+        width: 140px;
+        height: 140px;
+      }
+
+      #outer1 {
+        left: 20px;
+        top: 0px;
+      }
+      
+      #outer2 {
+        left: 130px;
+        top: 0px;
+      }
+      
+      #outer3 {
+        left: 65px;
+        top: 90px;
+      }  
+      .label-left {
+        position: absolute;
+        left: -150px; /* Position to the left of the circle */
+        top: 50%;
+        transform: translateY(-50%); /* Center vertically */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 280px;
+        
+      }
+      
+      .label-right {
+        position: absolute;
+        left: 250px; /* Position to the right of the circle */
+        top: 70%;
+        transform: translateY(-50%); /* Center vertically */
+        display: flex;
+       
+        align-items: center;
+        padding-top: 280px;
+        width: 100%;
+        
+      }
+      
+      .label-bottom {
+        position: absolute;
+        left: 45%;
+        top: 250px; /* Position below the last circle */
+        transform: translateX(-50%); /* Center horizontally */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        
+      }
+    
+      ul{
+        list-style-type: none;
+      }
+}

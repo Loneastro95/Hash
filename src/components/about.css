@@ -1,26 +1,27 @@
-.aboutContainer{
+.aboutContainer {
     display: flex;
     gap: 2rem;
     width: 100%;
-    justify-content: center;
-    aspect-ratio: 1/.4;
+    justify-content: space-between;
     padding-top: 4rem;
     padding-bottom: 3rem;
-    justify-content: space-between;
-    
-}
-.about-content{
+    align-items: center;
+  }
+  
+  /* Flex Direction for About Content */
+  .about-content {
     display: flex;
     flex-direction: column;
-   
-}
-
-.about-text{
-    text-align: center;
+    justify-content: center;
+    width: 50%; /* For larger screens */
+  }
+  
+  .about-text {
+    text-align: left; /* Align text to the left for readability */
     color: #7D7D7D;
-}
-
-.contactBtn{
+  }
+  
+  .contactBtn {
     width: 20%;
     display: flex;
     align-items: center;
@@ -32,4 +33,45 @@
     color: white;
     font-weight: bold;
     background-color: #003566;
-}
+  }
+  
+  /* Media Queries for Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .aboutContainer {
+      flex-direction: column; /* Stack image and text vertically */
+      align-items: center;
+      text-align: center; /* Center-align content on smaller screens */
+    }
+  
+    .about-content {
+      width: 90%; /* Expand content width for mobile */
+    }
+  
+    .about-text {
+      text-align: center; /* Center text on mobile */
+    }
+  
+    .contactBtn {
+      width: 50%; /* Increase button width for mobile */
+      min-height: 3.5rem; /* Adjust button height */
+      font-size: 1rem; /* Adjust button text size */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .aboutContainer {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+  
+    .about-content {
+      width: 100%; /* Full width on smallest screens */
+    }
+  
+    .contactBtn {
+      width: 80%; /* Full width button for smaller screens */
+      font-size: 0.9rem; /* Adjust button text size */
+      min-height: 3rem;
+    }
+  }
+  

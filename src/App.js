@@ -6,6 +6,7 @@ import About from './components/About';
 import Member from './components/Member';
 import What from './components/What';
 import Key from './components/Key';
+import Digital from './components/Digital';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Member/>
       <What/>
       <Key/>
+      <Digital/>
     </div>
   );
 }

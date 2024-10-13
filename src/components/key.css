@@ -1,45 +1,50 @@
-.keyMain{
-    background-color: #E8E4DA;
-    padding: 4rem 0;
-}
-
-.card-inner{
-  width: 30%;
-  min-height: 600px;
+.keyMain {
+  background-color: #E8E4DA;
+  padding: 4rem 0;
 }
 
 .card-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card-inner {
+  display: flex;
+  flex: 1 1 auto;
+  max-width: 31%; 
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.cardBody {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom-text {
+  font-size: 1.2rem;
+  color: #7D7D7D;
+  font-weight: normal;
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
   .card-inner {
-    display: flex;
-    flex: 1 1 auto;
-    max-width: 31%; 
+    max-width: 48%; /* Increase the card width on tablets */
+    margin-bottom: 2rem;
   }
-  
-  .card {
-    display: flex;
-    flex-direction: column;
-    height: 90%;
-    padding: 1rem ;
-    border-radius: 1rem;
-  }
-  
-  .cardBody {
-    flex-grow: 1; 
-    display: flex;
-    flex-direction: column;
+}
 
+@media (max-width: 576px) {
+  .card-inner {
+    max-width: 100%; /* Full width for mobile */
   }
-
-  .bottom-text{
-    font-size: 1.2rem;
-    color: #7D7D7D;
-    font-weight: normal;
-
-  }
-  
-  
+}
